@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directorio</title>
+
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+</head>
+
+<body>
+
+<main>
+    <h1>Directorio</h1>
+
+    {% for person in people %}
+
+        <section>
+
+        <img src="{{ person.image }}"/>
+        <h2>{{ person.name }}</h2>
+        <p class="person-title">{{ person.title }}</p>
+        <p class="person-email">{{ person.email }}</p>
+
+        </section>
+
+    {% endfor %}
+</main>
+</body>
+</html>
