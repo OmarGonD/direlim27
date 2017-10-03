@@ -1,0 +1,16 @@
+[
+  {
+    "model": "www.person",
+    "pk": 1,
+    "fields": {
+      "name": "Sergio Noriega",
+      "title": "Pastor",
+      "email": "sn@bethel.com",
+      "image": "htpp:...sn.jpg"
+
+    }
+
+    
+  }
+
+]

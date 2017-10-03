@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+
+
+    <div class="row">
+
+                <div class="col-md-4 text-center">
+                <img src="{{ person.image }}"/>
+                <h2>{{ person.name }}</h2>
+                <p class="person-title">{{ person.title }}</p>
+                <p class="person-email">{{ person.email }}</p>
+
+                </div>
+
+                <div class="col-md-8">
+                <img src="{{ person.mapa }}" widht="600px" height="460px"/>
+                </div>
+
+    </div>
+
+{% endblock %}

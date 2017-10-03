@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{%  load bootstrap3 %}
+{% load embed_video_tags %}
+
+
+{% block content %}
+
+        <div class="row text-center">
+
+        <h1>Ministerios Elim - Los Ángeles</h1>
+        <p>Pastor: Jorge Fuentes</p>
+        <p>Fecha: 12/06/2017</p>
+
+        </br>
+
+
+        {% video predicas_actual '800x400' %}
+
+        </div>
+
+
+    </br>
+    </br>
+    </br>
+
+
+
+{% endblock %}

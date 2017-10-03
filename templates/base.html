@@ -1,0 +1,88 @@
+{%  load staticfiles %}
+{%  load bootstrap3 %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Directorio</title>
+
+    <script type="text/javascript" src="{% static 'jquery-3.2.1.slim.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+
+
+</head>
+
+<body>
+
+        <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="text-center">
+
+            </br>
+          <a href="/">
+            <img src="{% static 'images/elim-logo.png' %}" width="100px" height="100px">
+            <h3>Ministerios Internacionales Elim</h3>
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+            </br>
+            </br>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navConstricted nav-justified">
+            <li class="active"><a href="/"> Elim <span class="sr-only">(current)</span></a></li>
+            <li><a href="/elim-tv/"> Elim TV </a></li>
+              <li><a href="/elim-radio/"> Elim Radio </a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Eventos<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Retiro 2017: La Hora Final </a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Retiro 2017 de Pastores</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">El gozo de la familia de Dios</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Otros eventos</a></li>
+              </ul>
+            </li>
+            <li><a href="/elim-directorio/">Elim Directorio</a></li>
+            <li><a href="/quienes-somos/">¿Quiénes somos?</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--<nav class="navbar navbar-default navbar-static-top text-center">
+        <a href="/">
+        </br>
+            <img class="img-responsive" style="display:inline-block"
+                 src="{% static 'images/elim-logo.png' %}" width="100px" height="100px">
+            <h3>Ministerios Internacionales Elim</h3>
+        </a>
+    </nav>-->
+
+    </br>
+    </br>
+
+    <main class="container" role="main">
+
+        {% block content %}
+        {%  endblock %}
+
+
+    </main>
+
+</body>
+
+</html>

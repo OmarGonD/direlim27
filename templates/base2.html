@@ -1,0 +1,42 @@
+{%  load staticfiles %}
+{%  load bootstrap3 %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Directorio</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-static-top text-center">
+        <a href="/">
+        </br>
+            <img class="img-responsive" style="display:inline-block"
+                 src="{% static 'images/elim-logo.png' %}" width="100px" height="100px">
+            <h3>Ministerios Internacionales Elim</h3>
+        </a>
+    </nav>
+
+    </br>
+    </br>
+
+    <main class="container" role="main">
+
+        {% block content %}
+        {%  endblock %}
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,32 +1,24 @@
-{% load staticfiles %}
+{% extends 'base.html' %}
+{%  load bootstrap3 %}
+{%  load staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Directorio</title>
 
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+{% block content %}
 
-</head>
+        <div class="col-md-12">
+            <h1>Retiro Internacional Elim Los Ángeles 2017</h1>
+            <h2>Del 17 al 23 de julio del 2017</h2>
+            <h2>Lugar: Anahaeim Convention Center</h2>
+            </br>
+            </br>
+            </br>
+            <img class="center-block" src="{% static 'images/retiro-la-2017.jpg' %}" width="1100px" height="550px">
 
-<body>
+            </br>
+            </br>
+            </br>
+        </div>
 
-<main>
-    <h1>Directorio</h1>
 
-    {% for person in people %}
 
-        <section>
-
-        <img src="{{ person.image }}"/>
-        <h2>{{ person.name }}</h2>
-        <p class="person-title">{{ person.title }}</p>
-        <p class="person-email">{{ person.email }}</p>
-
-        </section>
-
-    {% endfor %}
-</main>
-</body>
-</html>
+{% endblock %}
